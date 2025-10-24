@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality Certification & Traceability - Shree Anna Connect</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .certification-process {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .process-step {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            position: relative;
+        }
+        
+        .step-number {
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            background: var(--primary);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .traceability-demo {
+            background: var(--light);
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .qr-code {
+            width: 200px;
+            height: 200px;
+            background: white;
+            margin: 2rem auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed var(--primary);
+            border-radius: 10px;
+        }
+        
+        .blockchain-visual {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .blockchain-step {
+            display: flex;
+            align-items: center;
+            margin: 1rem 0;
+            padding: 1rem;
+            background: var(--light);
+            border-radius: 8px;
+        }
+        
+        .blockchain-icon {
+            font-size: 2rem;
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-icon">🌾</span>
+                <h1>Shree Anna Connect</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Home</a></li>
+                    <li><a href="digital-marketplace.html">Marketplace</a></li>
+                    <li><a href="direct-trade.html">Direct Trade</a></li>
+                    <li><a href="online-trading.html">Online Trading</a></li>
+                    <li><a href="quality-certification.html" class="active">Quality & Traceability</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <span id="userWelcome">Welcome, User!</span>
+                <button class="btn btn-outline" id="logoutBtn">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Quality Certification & Traceability</h1>
+            <p>Assured product quality with farm-to-fork tracking using blockchain technology</p>
+        </div>
+    </section>
+
+    <section class="page-content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="content-main">
+                    <h2>Trust Through Transparency</h2>
+                    <p>Our blockchain-powered traceability system ensures complete transparency from farm to fork. Every product on our platform comes with verified quality certification and detailed journey tracking.</p>
+                    
+                    <div class="certification-process">
+                        <div class="process-step">
+                            <div class="step-number">1</div>
+                            <div class="feature-icon">🌱</div>
+                            <h3>Farm Verification</h3>
+                            <p>Documentation of farming practices, soil quality, and input usage</p>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">2</div>
+                            <div class="feature-icon">🔍</div>
+                            <h3>Quality Testing</h3>
+                            <p>Laboratory testing for nutritional content, purity, and safety standards</p>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">3</div>
+                            <div class="feature-icon">📱</div>
+                            <h3>Digital Certification</h3>
+                            <p>Blockchain-based digital certificates that cannot be tampered with</p>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="step-number">4</div>
+                            <div class="feature-icon">🚚</div>
+                            <h3>Journey Tracking</h3>
+                            <p>Real-time tracking of products through the entire supply chain</p>
+                        </div>
+                    </div>
+                    
+                    <div class="traceability-demo">
+                        <h3>Experience Farm-to-Fork Traceability</h3>
+                        <p>Scan the QR code to see a sample product journey</p>
+                        
+                        <div class="qr-code">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem;">📱</div>
+                                <small>Sample QR Code</small>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-primary">View Sample Trace</button>
+                    </div>
+                    
+                    <div class="blockchain-visual">
+                        <h3>How Blockchain Ensures Trust</h3>
+                        <p>Our Hyperledger Fabric-based blockchain creates an immutable record of every transaction and movement in the supply chain.</p>
+                        
+                        <div class="blockchain-step">
+                            <div class="blockchain-icon">👨‍🌾</div>
+                            <div>
+                                <h4>Farmer Registration</h4>
+                                <p>Farmer details and farm practices recorded on blockchain</p>
+                            </div>
+                        </div>
+                        
+                        <div class="blockchain-step">
+                            <div class="blockchain-icon">🌾</div>
+                            <div>
+                                <h4>Harvest & Testing</h4>
+                                <p>Quality test results and certifications added to blockchain</p>
+                            </div>
+                        </div>
+                        
+                        <div class="blockchain-step">
+                            <div class="blockchain-icon">🏭</div>
+                            <div>
+                                <h4>Processing</h4>
+                                <p>Processing details and quality checks recorded</p>
+                            </div>
+                        </div>
+                        
+                        <div class="blockchain-step">
+                            <div class="blockchain-icon">🛒</div>
+                            <div>
+                                <h4>Retail & Consumer</h4>
+                                <p>Final product reaches consumer with complete history</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3>Quality Standards & Certifications</h3>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <h4>Organic Certification</h4>
+                            <p>Verified organic farming practices with certification from recognized bodies. Complete documentation of input usage and farming methods.</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <h4>Food Safety Standards</h4>
+                            <p>Compliance with FSSAI regulations and international food safety standards. Regular testing for contaminants and adulterants.</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <h4>Nutritional Profiling</h4>
+                            <p>Detailed nutritional analysis including protein content, fiber, vitamins, and mineral composition. Verified health claims.</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <h4>Sustainability Metrics</h4>
+                            <p>Tracking of water usage, carbon footprint, and sustainable farming practices. Environmental impact assessment.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Quick Actions</h3>
+                        <a href="#" class="btn btn-primary btn-full">Apply for Certification</a>
+                        <a href="#" class="btn btn-outline btn-full">Verify Product</a>
+                        <a href="#" class="btn btn-outline btn-full">Quality Reports</a>
+                        <a href="#" class="btn btn-outline btn-full">Certification Status</a>
+                    </div>
+                    
+                    <div class="sidebar-card">
+                        <h3>Certification Types</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);">
+                                <strong>🌱 Organic</strong><br>
+                                <small>Chemical-free farming</small>
+                            </li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);">
+                                <strong>⭐ Premium</strong><br>
+                                <small>Highest quality grade</small>
+                            </li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);">
+                                <strong>🏷️ Standard</strong><br>
+                                <small>Quality assured</small>
+                            </li>
+                            <li style="padding: 0.5rem 0;">
+                                <strong>🌍 Sustainable</strong><br>
+                                <small>Eco-friendly practices</small>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-card">
+                        <h3>Quality Metrics</h3>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-number">98.2%</span>
+                                <span class="stat-label">Certification Rate</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">4.8/5</span>
+                                <span class="stat-label">Quality Rating</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">24h</span>
+                                <span class="stat-label">Avg. Testing Time</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Shree Anna Connect</h3>
+                    <p>Transforming the millet value chain through technology and innovation.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="dashboard.html">Home</a></li>
+                        <li><a href="quality-certification.html">Quality & Traceability</a></li>
+                        <li><a href="digital-marketplace.html">Marketplace</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Shree Anna Connect. All rights reserved. | SMART INDIA HACKATHON 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

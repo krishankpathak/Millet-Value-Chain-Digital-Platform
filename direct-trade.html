@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direct Trade Links - Shree Anna Connect</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 4px solid var(--primary);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .price-comparison {
+            background: var(--light);
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .comparison-table th {
+            background: var(--primary);
+            color: white;
+        }
+        
+        .benefit {
+            color: var(--primary);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-icon">🌾</span>
+                <h1>Shree Anna Connect</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Home</a></li>
+                    <li><a href="digital-marketplace.html">Marketplace</a></li>
+                    <li><a href="direct-trade.html" class="active">Direct Trade</a></li>
+                    <li><a href="online-trading.html">Online Trading</a></li>
+                    <li><a href="quality-certification.html">Quality & Traceability</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <span id="userWelcome">Welcome, User!</span>
+                <button class="btn btn-outline" id="logoutBtn">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Direct Trade Links</h1>
+            <p>Fair price discovery and transparent transactions between farmers and buyers</p>
+        </div>
+    </section>
+
+    <section class="page-content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="content-main">
+                    <h2>Eliminating Intermediaries, Ensuring Fair Prices</h2>
+                    <p>Our direct trade platform connects farmers directly with buyers, processors, and retailers, ensuring fair prices and transparent transactions. By cutting out middlemen, we increase farmer income by 20-30% while providing buyers with better quality assurance.</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">💰</div>
+                            <h3>Fair Price Discovery</h3>
+                            <p>Real-time market prices and transparent bidding system ensure farmers get the best value for their produce.</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">🤝</div>
+                            <h3>Direct Negotiation</h3>
+                            <p>Farmers and buyers can communicate directly to negotiate terms and build long-term relationships.</p>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-icon">📊</div>
+                            <h3>Market Intelligence</h3>
+                            <p>Access to historical price data, demand trends, and market forecasts for informed decision making.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="price-comparison">
+                        <h3>Price Comparison: Traditional vs Direct Trade</h3>
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Parameter</th>
+                                    <th>Traditional System</th>
+                                    <th>Direct Trade Platform</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Farmer's Share</td>
+                                    <td>40-50% of consumer price</td>
+                                    <td class="benefit">70-80% of consumer price</td>
+                                </tr>
+                                <tr>
+                                    <td>Price Transparency</td>
+                                    <td>Limited</td>
+                                    <td class="benefit">Complete</td>
+                                </tr>
+                                <tr>
+                                    <td>Transaction Time</td>
+                                    <td>2-3 days</td>
+                                    <td class="benefit">Few hours</td>
+                                </tr>
+                                <tr>
+                                    <td>Quality Assurance</td>
+                                    <td>Basic</td>
+                                    <td class="benefit">Certified & Verified</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <h3>How Direct Trade Works</h3>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <h4>1. Farmer Registration & Product Listing</h4>
+                            <p>Farmers register on the platform and list their millet produce with quality specifications, quantity available, and expected price range.</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <h4>2. Buyer Discovery & Matching</h4>
+                            <p>Our AI-powered system matches farmers with suitable buyers based on location, product requirements, and trade history.</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <h4>3. Transparent Bidding & Negotiation</h4>
+                            <p>Buyers can place bids or make offers, and farmers can accept, reject, or counter-offer through the platform.</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <h4>4. Secure Transaction & Logistics</h4>
+                            <p>Once agreed, the platform facilitates secure payment processing and coordinates logistics through partner providers.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Quick Actions</h3>
+                        <a href="#" class="btn btn-primary btn-full">List Your Produce</a>
+                        <a href="#" class="btn btn-outline btn-full">Find Farmers</a>
+                        <a href="#" class="btn btn-outline btn-full">View Price Trends</a>
+                        <a href="#" class="btn btn-outline btn-full">Trade History</a>
+                    </div>
+                    
+                    <div class="sidebar-card">
+                        <h3>Live Market Prices</h3>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-number">₹45/kg</span>
+                                <span class="stat-label">Foxtail Millet</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">₹52/kg</span>
+                                <span class="stat-label">Pearl Millet</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">₹68/kg</span>
+                                <span class="stat-label">Finger Millet</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">₹75/kg</span>
+                                <span class="stat-label">Organic Varieties</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-card">
+                        <h3>Success Stories</h3>
+                        <div style="font-size: 0.9rem; color: var(--gray);">
+                            <p>"Through direct trade, I increased my income by 35% and built long-term relationships with reliable buyers."</p>
+                            <p style="text-align: right; margin-top: 0.5rem;"><strong>- Ramesh Kumar, Farmer</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Shree Anna Connect</h3>
+                    <p>Transforming the millet value chain through technology and innovation.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="dashboard.html">Home</a></li>
+                        <li><a href="digital-marketplace.html">Marketplace</a></li>
+                        <li><a href="direct-trade.html">Direct Trade</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Shree Anna Connect. All rights reserved. | SMART INDIA HACKATHON 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

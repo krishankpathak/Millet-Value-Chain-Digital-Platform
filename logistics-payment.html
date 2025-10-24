@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistics & Payment Support - Shree Anna Connect</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .tracking-demo {
+            background: var(--light);
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .tracking-steps {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0;
+            position: relative;
+        }
+        
+        .tracking-steps:before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--primary);
+            z-index: 1;
+        }
+        
+        .tracking-step {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            flex: 1;
+        }
+        
+        .step-circle {
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+        
+        .payment-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .payment-method {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-icon">🌾</span>
+                <h1>Shree Anna Connect</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Home</a></li>
+                    <li><a href="digital-marketplace.html">Marketplace</a></li>
+                    <li><a href="direct-trade.html">Direct Trade</a></li>
+                    <li><a href="online-trading.html">Online Trading</a></li>
+                    <li><a href="logistics-payment.html" class="active">Logistics & Payment</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <span id="userWelcome">Welcome, User!</span>
+                <button class="btn btn-outline" id="logoutBtn">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Logistics & Payment Support</h1>
+            <p>Integrated 3PL dispatch services and secured payment gateways for seamless transactions</p>
+        </div>
+    </section>
+
+    <section class="page-content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="content-main">
+                    <h2>End-to-End Supply Chain Solutions</h2>
+                    <p>Our integrated logistics and payment infrastructure ensures smooth and secure transactions across the millet value chain. From farm collection to customer delivery, we manage the entire process efficiently.</p>
+                    
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">🚚</div>
+                            <h3>Smart Logistics</h3>
+                            <p>AI-powered route optimization and real-time tracking for efficient delivery</p>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-icon">💳</div>
+                            <h3>Secure Payments</h3>
+                            <p>Multiple payment options with escrow services and instant settlements</p>
+                        </div>
+                        
+                        <div class="service-card">
+                            <div class="service-icon">📦</div>
+                            <h3>Warehousing</h3>
+                            <p>Temperature-controlled storage and inventory management across India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tracking-demo">
+                        <h3 style="text-align: center;">Real-Time Shipment Tracking</h3>
+                        
+                        <div class="tracking-steps">
+                            <div class="tracking-step">
+                                <div class="step-circle">1</div>
+                                <div>Order<br>Placed</div>
+                            </div>
+                            <div class="tracking-step">
+                                <div class="step-circle">2</div>
+                                <div>Picked<br>Up</div>
+                            </div>
+                            <div class="tracking-step">
+                                <div class="step-circle">3</div>
+                                <div>In<br>Transit</div>
+                            </div>
+                            <div class="tracking-step">
+                                <div class="step-circle">4</div>
+                                <div>Out for<br>Delivery</div>
+                            </div>
+                            <div class="tracking-step">
+                                <div class="step-circle">5</div>
+                                <div>Delivered</div>
+                            </div>
+                        </div>
+                        
+                        <div style="text-align: center;">
+                            <p><strong>Current Status:</strong> <span style="color: var(--primary);">In Transit</span></p>
+                            <p><strong>Estimated Delivery:</strong> 2 days</p>
+                            <button class="btn btn-outline">View Detailed Tracking</button>
+                        </div>
+                    </div>
+                    
+                    <h3>Payment Solutions</h3>
+                    <p>We offer comprehensive payment solutions tailored for different stakeholders in the millet value chain.</p>
+                    
+                    <div class="payment-methods">
+                        <div class="payment-method">
+                            <div style="font-size: 2rem;">📱</div>
+                            <h4>UPI</h4>
+                            <small>Instant transfers</small>
+                        </div>
+                        
+                        <div class="payment-method">
+                            <div style="font-size: 2rem;">💎</div>
+                            <h4>Net Banking</h4>
+                            <small>All major banks</small>
+                        </div>
+                        
+                        <div class="payment-method">
+                            <div style="font-size: 2rem;">💳</div>
+                            <h4>Cards</h4>
+                            <small>Credit/Debit</small>
+                        </div>
+                        
+                        <div class="payment-method">
+                            <div style="font-size: 2rem;">🏦</div>
+                            <h4>Escrow</h4>
+                            <small>Secure payments</small>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <h4>Logistics Network</h4>
+                            <p>Partnership with leading 3PL providers across India. Specialized handling for agricultural products with temperature-controlled vehicles and warehouses. Last-mile delivery to both urban and rural areas.</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <h4>Payment Security</h4>
+                            <p>PCI-DSS compliant payment gateway with advanced encryption. Escrow services for high-value B2B transactions. Instant settlement for farmers and quick refund processing.</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <h4>Cost Optimization</h4>
+                            <p>AI-based route optimization to reduce transportation costs. Consolidated shipping for better rates. Transparent pricing with no hidden charges.</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <h4>Customer Support</h4>
+                            <p>24/7 customer support for logistics and payment queries. Multilingual support team. Dedicated account managers for enterprise clients.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Quick Actions</h3>
+                        <a href="#" class="btn btn-primary btn-full">Schedule Pickup</a>
+                        <a href="#" class="btn btn-outline btn-full">Track Shipment</a>
+                        <a href="#" class="btn btn-outline btn-full">Payment History</a>
+                        <a href="#" class="btn btn-outline btn-full">Raise Issue</a>
+                    </div>
+                    
+                    <div class="sidebar-card">
+                        <h3>Logistics Partners</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);">🚚 Delhivery</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);">📦 Blue Dart</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);">🏍️ Dunzo</li>
+                            <li style="padding: 0.5rem 0;">🚛 Shadowfax</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-card">
+                        <h3>Service Metrics</h3>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-number">99.1%</span>
+                                <span class="stat-label">On-time Delivery</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">4.9/5</span>
+                                <span class="stat-label">Customer Rating</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">48h</span>
+                                <span class="stat-label">Avg. Delivery Time</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Shree Anna Connect</h3>
+                    <p>Transforming the millet value chain through technology and innovation.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="dashboard.html">Home</a></li>
+                        <li><a href="logistics-payment.html">Logistics & Payment</a></li>
+                        <li><a href="digital-marketplace.html">Marketplace</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Shree Anna Connect. All rights reserved. | SMART INDIA HACKATHON 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

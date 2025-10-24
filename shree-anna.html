@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Anna Initiative - Shree Anna Connect</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .initiative-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .highlight-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .highlight-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .millet-types {
+            background: var(--light);
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .millet-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .millet-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .millet-image {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .nutrition-facts {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .nutrition-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .nutrition-item {
+            text-align: center;
+            padding: 1rem;
+            background: var(--light);
+            border-radius: 8px;
+        }
+        
+        .nutrition-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-icon">🌾</span>
+                <h1>Shree Anna Connect</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Home</a></li>
+                    <li><a href="digital-marketplace.html">Marketplace</a></li>
+                    <li><a href="direct-trade.html">Direct Trade</a></li>
+                    <li><a href="online-trading.html">Online Trading</a></li>
+                    <li><a href="shree-anna.html" class="active">Shree Anna</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <span id="userWelcome">Welcome, User!</span>
+                <button class="btn btn-outline" id="logoutBtn">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Shree Anna Initiative</h1>
+            <p>India's initiative to rebrand millets as "super-food for nutritional security"</p>
+        </div>
+    </section>
+
+    <section class="page-content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="content-main">
+                    <h2>Revolutionizing Nutrition with Millets</h2>
+                    <p>The Shree Anna initiative represents India's commitment to promoting millets as nutritional powerhouses for the 21st century. By rebranding millets as "Shree Anna" (the respected food), we're driving a nutritional revolution that benefits farmers, consumers, and the environment.</p>
+                    
+                    <div class="initiative-highlights">
+                        <div class="highlight-card">
+                            <div class="highlight-icon">🌱</div>
+                            <h3>Nutritional Security</h3>
+                            <p>Millets are rich in protein, fiber, vitamins, and minerals, making them ideal for addressing malnutrition</p>
+                        </div>
+                        
+                        <div class="highlight-card">
+                            <div class="highlight-icon">💧</div>
+                            <h3>Water Efficiency</h3>
+                            <p>Millets require 70% less water than rice and wheat, making them sustainable crops</p>
+                        </div>
+                        
+                        <div class="highlight-card">
+                            <div class="highlight-icon">🌍</div>
+                            <h3>Climate Resilience</h3>
+                            <p>Drought-resistant and able to grow in poor soil conditions, millets are climate-smart crops</p>
+                        </div>
+                    </div>
+                    
+                    <div class="millet-types">
+                        <h3 style="text-align: center;">Types of Shree Anna (Millets)</h3>
+                        <div class="millet-grid">
+                            <div class="millet-card">
+                                <div class="millet-image">🌾</div>
+                                <h4>Foxtail Millet</h4>
+                                <p>High in iron and protein, gluten-free</p>
+                            </div>
+                            
+                            <div class="millet-card">
+                                <div class="millet-image">🟡</div>
+                                <h4>Pearl Millet</h4>
+                                <p>Rich in fiber and antioxidants</p>
+                            </div>
+                            
+                            <div class="millet-card">
+                                <div class="millet-image">👆</div>
+                                <h4>Finger Millet</h4>
+                                <p>High calcium content, ideal for bones</p>
+                            </div>
+                            
+                            <div class="millet-card">
+                                <div class="millet-image">⚪</div>
+                                <h4>Little Millet</h4>
+                                <p>Rich in B vitamins and minerals</p>
+                            </div>
+                            
+                            <div class="millet-card">
+                                <div class="millet-image">🟤</div>
+                                <h4>Barnyard Millet</h4>
+                                <p>Low glycemic index, diabetic-friendly</p>
+                            </div>
+                            
+                            <div class="millet-card">
+                                <div class="millet-image">🟢</div>
+                                <h4>Kodo Millet</h4>
+                                <p>High antioxidant content</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="nutrition-facts">
+                        <h3 style="text-align: center;">Nutritional Power of Shree Anna</h3>
+                        <p style="text-align: center;">Compared to rice and wheat, millets offer superior nutritional value</p>
+                        
+                        <div class="nutrition-grid">
+                            <div class="nutrition-item">
+                                <div class="nutrition-value">8-12%</div>
+                                <div>Protein Content</div>
+                            </div>
+                            
+                            <div class="nutrition-item">
+                                <div class="nutrition-value">2-7%</div>
+                                <div>Dietary Fiber</div>
+                            </div>
+                            
+                            <div class="nutrition-item">
+                                <div class="nutrition-value">2-5x</div>
+                                <div>More Minerals</div>
+                            </div>
+                            
+                            <div class="nutrition-item">
+                                <div class="nutrition-value">Low GI</div>
+                                <div>Glycemic Index</div>
+                            </div>
+                            
+                            <div class="nutrition-item">
+                                <div class="nutrition-value">Gluten Free</div>
+                                <div>Naturality</div>
+                            </div>
+                            
+                            <div class="nutrition-item">
+                                <div class="nutrition-value">Rich in</div>
+                                <div>Antioxidants</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3>Government Initiatives & Support</h3>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <h4>National Millet Mission</h4>
+                            <p>Government support for millet cultivation, processing, and marketing. Subsidies for millet farmers and incentives for value-added product development.</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <h4>International Year of Millets 2023</h4>
+                            <p>India led the global celebration of millets, creating international awareness and market opportunities for Indian millet products.</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <h4>Research & Development</h4>
+                            <p>Investment in millet research for developing high-yield varieties, improved processing techniques, and nutritional studies.</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <h4>Market Linkages</h4>
+                            <p>Creating domestic and international market opportunities through trade fairs, export promotions, and retail partnerships.</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Recipes & Culinary Innovation</h3>
+                    <p>Discover the culinary versatility of millets with traditional and modern recipes:</p>
+                    <ul>
+                        <li><strong>Millet Khichdi:</strong> Nutritious one-pot meal</li>
+                        <li><strong>Millet Dosa:</strong> Crispy fermented crepes</li>
+                        <li><strong>Millet Upma:</strong> Healthy breakfast option</li>
+                        <li><strong>Millet Cookies:</strong> Healthy snacking</li>
+                        <li><strong>Millet Biryani:</strong> Flavorful rice alternative</li>
+                    </ul>
+                </div>
+                
+                <div class="content-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Quick Actions</h3>
+                        <a href="#" class="btn btn-primary btn-full">Explore Recipes</a>
+                        <a href="#" class="btn btn-outline btn-full">Buy Shree Anna</a>
+                        <a href="#" class="btn btn-outline btn-full">Nutrition Guide</a>
+                        <a href="#" class="btn btn-outline btn-full">Cooking Tips</a>
+                    </div>
+                    
+                    <div class="sidebar-card">
+                        <h3>Health Benefits</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);">❤️ Heart Health</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);">🩸 Diabetes Control</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);">⚖️ Weight Management</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);">🦴 Bone Strength</li>
+                            <li style="padding: 0.5rem 0;">🌱 Gluten-Free</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-card">
+                        <h3>Shree Anna Impact</h3>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-number">30%</span>
+                                <span class="stat-label">More Nutrition</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">70%</span>
+                                <span class="stat-label">Less Water</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">25%</span>
+                                <span class="stat-label">Higher Income</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Shree Anna Connect</h3>
+                    <p>Transforming the millet value chain through technology and innovation.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="dashboard.html">Home</a></li>
+                        <li><a href="shree-anna.html">Shree Anna</a></li>
+                        <li><a href="digital-marketplace.html">Marketplace</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Shree Anna Connect. All rights reserved. | SMART INDIA HACKATHON 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

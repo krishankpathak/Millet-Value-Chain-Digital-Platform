@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Shree Anna Connect</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .auth-hero {
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        .user-type-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-bottom: 1rem;
+        }
+        
+        .user-type-card {
+            padding: 1rem;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .user-type-card:hover {
+            border-color: var(--primary);
+        }
+        
+        .user-type-card.selected {
+            border-color: var(--primary);
+            background: var(--light);
+        }
+        
+        .user-type-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body class="auth-page">
+    <div class="auth-hero">
+        <div class="container">
+            <div class="logo" style="justify-content: center; margin-bottom: 1rem;">
+                <span class="logo-icon">🌾</span>
+                <h1 style="color: white;">Shree Anna Connect</h1>
+            </div>
+            <p style="font-size: 1.2rem;">Join India's Digital Millet Revolution</p>
+        </div>
+    </div>
+    
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h2>Create Account</h2>
+                <p>Join our millet value chain platform</p>
+            </div>
+            
+            <form id="signupForm" class="auth-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>I am a</label>
+                    <div class="user-type-cards">
+                        <div class="user-type-card" data-type="farmer" onclick="selectUserType('farmer')">
+                            <div class="user-type-icon">👨‍🌾</div>
+                            <div>Farmer</div>
+                        </div>
+                        <div class="user-type-card" data-type="buyer" onclick="selectUserType('buyer')">
+                            <div class="user-type-icon">🏪</div>
+                            <div>Buyer</div>
+                        </div>
+                        <div class="user-type-card" data-type="processor" onclick="selectUserType('processor')">
+                            <div class="user-type-icon">🏭</div>
+                            <div>Processor</div>
+                        </div>
+                        <div class="user-type-card" data-type="shg" onclick="selectUserType('shg')">
+                            <div class="user-type-icon">👩‍👩‍👧‍👧</div>
+                            <div>SHG</div>
+                        </div>
+                    </div>
+                    <input type="hidden" id="userType" name="userType" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password (min. 6 characters)" required minlength="6">
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+                </div>
+                
+                <div class="form-options">
+                    <label class="checkbox">
+                        <input type="checkbox" name="terms" required>
+                        <span>I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></span>
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-full">Create My Account</button>
+            </form>
+            
+            <div class="auth-footer">
+                <p>Already have an account? <a href="index.html">Login here</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="auth.js"></script>
+    <script>
+        function selectUserType(type) {
+            // Remove selected class from all cards
+            document.querySelectorAll('.user-type-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            
+            // Add selected class to clicked card
+            document.querySelector(`[data-type="${type}"]`).classList.add('selected');
+            
+            // Set hidden input value
+            document.getElementById('userType').value = type;
+        }
+    </script>
+</body>
+</html>

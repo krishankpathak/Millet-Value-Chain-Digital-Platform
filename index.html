@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Shree Anna Connect</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .auth-hero {
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        .demo-accounts {
+            background: var(--light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        
+        .demo-account {
+            background: white;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 6px;
+            border-left: 4px solid var(--secondary);
+        }
+    </style>
+</head>
+<body class="auth-page">
+    <div class="auth-hero">
+        <div class="container">
+            <div class="logo" style="justify-content: center; margin-bottom: 1rem;">
+                <span class="logo-icon">🌾</span>
+                <h1 style="color: white;">Shree Anna Connect</h1>
+            </div>
+            <p style="font-size: 1.2rem;">Connecting Farms to Forks - Millet Value Chain Transformation</p>
+        </div>
+    </div>
+    
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h2>Welcome Back</h2>
+                <p>Login to access your account</p>
+            </div>
+            
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                
+                <div class="form-options">
+                    <label class="checkbox">
+                        <input type="checkbox" name="remember">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-full">Login to Dashboard</button>
+            </form>
+            
+            <div class="demo-accounts">
+                <h4 style="text-align: center; margin-bottom: 1rem; color: var(--dark);">Demo Accounts (Click to auto-fill)</h4>
+                
+                <div class="demo-account" onclick="fillDemo('farmer@demo.com', 'password')">
+                    <strong>👨‍🌾 Farmer Account</strong><br>
+                    <small>farmer@demo.com / password</small>
+                </div>
+                
+                <div class="demo-account" onclick="fillDemo('buyer@demo.com', 'password')">
+                    <strong>🏪 Buyer Account</strong><br>
+                    <small>buyer@demo.com / password</small>
+                </div>
+                
+                <div class="demo-account" onclick="fillDemo('processor@demo.com', 'password')">
+                    <strong>🏭 Processor Account</strong><br>
+                    <small>processor@demo.com / password</small>
+                </div>
+            </div>
+            
+            <div class="auth-footer">
+                <p>Don't have an account? <a href="signup.html">Create one here</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="auth.js"></script>
+    <script>
+        function fillDemo(email, password) {
+            document.getElementById('email').value = email;
+            document.getElementById('password').value = password;
+        }
+    </script>
+</body>
+</html>

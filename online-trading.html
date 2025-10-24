@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Trading & E-commerce - Shree Anna Connect</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .trading-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .trading-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .trading-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .product-showcase {
+            background: var(--light);
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .product-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .product-image {
+            width: 100px;
+            height: 100px;
+            background: var(--primary);
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+        }
+        
+        .price {
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-icon">🌾</span>
+                <h1>Shree Anna Connect</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Home</a></li>
+                    <li><a href="digital-marketplace.html">Marketplace</a></li>
+                    <li><a href="direct-trade.html">Direct Trade</a></li>
+                    <li><a href="online-trading.html" class="active">Online Trading</a></li>
+                    <li><a href="quality-certification.html">Quality & Traceability</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <span id="userWelcome">Welcome, User!</span>
+                <button class="btn btn-outline" id="logoutBtn">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Online Trading & E-commerce</h1>
+            <p>Seamless buying and selling of millets and value-added products</p>
+        </div>
+    </section>
+
+    <section class="page-content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="content-main">
+                    <h2>Digital Commerce for Millet Ecosystem</h2>
+                    <p>Our comprehensive e-commerce platform enables seamless trading of millets and value-added products across the value chain. From raw produce to processed goods, we provide a complete digital marketplace experience.</p>
+                    
+                    <div class="trading-features">
+                        <div class="trading-card">
+                            <div class="trading-icon">🛒</div>
+                            <h3>B2C Retail</h3>
+                            <p>Direct-to-consumer sales of packaged millets and value-added products</p>
+                        </div>
+                        
+                        <div class="trading-card">
+                            <div class="trading-icon">🏢</div>
+                            <h3>B2B Wholesale</h3>
+                            <p>Bulk trading for processors, retailers, and institutional buyers</p>
+                        </div>
+                        
+                        <div class="trading-card">
+                            <div class="trading-icon">📦</div>
+                            <h3>Fulfillment</h3>
+                            <p>Integrated logistics and delivery across India</p>
+                        </div>
+                        
+                        <div class="trading-card">
+                            <div class="trading-icon">💳</div>
+                            <h3>Secure Payments</h3>
+                            <p>Multiple payment options with complete security</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-showcase">
+                        <h3 style="text-align: center; margin-bottom: 2rem;">Featured Millet Products</h3>
+                        <div class="products-grid">
+                            <div class="product-card">
+                                <div class="product-image">🌾</div>
+                                <h4>Organic Foxtail Millet</h4>
+                                <p>1kg Pack</p>
+                                <div class="price">₹450</div>
+                                <button class="btn btn-primary" style="padding: 8px 16px;">Add to Cart</button>
+                            </div>
+                            
+                            <div class="product-card">
+                                <div class="product-image">🍚</div>
+                                <h4>Pearl Millet Flour</h4>
+                                <p>500g Pack</p>
+                                <div class="price">₹280</div>
+                                <button class="btn btn-primary" style="padding: 8px 16px;">Add to Cart</button>
+                            </div>
+                            
+                            <div class="product-card">
+                                <div class="product-image">🥣</div>
+                                <h4>Millet Breakfast Mix</h4>
+                                <p>400g Pack</p>
+                                <div class="price">₹320</div>
+                                <button class="btn btn-primary" style="padding: 8px 16px;">Add to Cart</button>
+                            </div>
+                            
+                            <div class="product-card">
+                                <div class="product-image">🍪</div>
+                                <h4>Millet Cookies</h4>
+                                <p>200g Pack</p>
+                                <div class="price">₹180</div>
+                                <button class="btn btn-primary" style="padding: 8px 16px;">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3>Trading Process</h3>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <h4>Product Listing & Catalog Management</h4>
+                            <p>Sellers can easily list products with detailed descriptions, images, and specifications. Our catalog management system supports bulk uploads and inventory tracking.</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <h4>Smart Search & Discovery</h4>
+                            <p>Advanced search functionality with filters for product type, quality grade, location, price range, and seller ratings.</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <h4>Order Management</h4>
+                            <p>Complete order lifecycle management from placement to delivery, with real-time tracking and notifications.</p>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <h4>Payment Gateway Integration</h4>
+                            <p>Secure payment processing with multiple options including UPI, net banking, cards, and digital wallets. Escrow services for high-value transactions.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-sidebar">
+                    <div class="sidebar-card">
+                        <h3>Quick Actions</h3>
+                        <a href="#" class="btn btn-primary btn-full">Start Selling</a>
+                        <a href="#" class="btn btn-outline btn-full">Browse Products</a>
+                        <a href="#" class="btn btn-outline btn-full">My Orders</a>
+                        <a href="#" class="btn btn-outline btn-full">Sales Analytics</a>
+                    </div>
+                    
+                    <div class="sidebar-card">
+                        <h3>Cart Summary</h3>
+                        <div style="text-align: center; padding: 1rem;">
+                            <div style="font-size: 2rem;">🛒</div>
+                            <p>Your cart is empty</p>
+                            <a href="#" class="btn btn-outline btn-full">Start Shopping</a>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-card">
+                        <h3>Top Categories</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);">🟡 Raw Millets</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);">⚪ Millet Flour</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);">🍪 Ready-to-Eat</li>
+                            <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--border);">🌱 Organic Products</li>
+                            <li style="padding: 0.5rem 0;">📦 Bulk Orders</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Shree Anna Connect</h3>
+                    <p>Transforming the millet value chain through technology and innovation.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="dashboard.html">Home</a></li>
+                        <li><a href="digital-marketplace.html">Marketplace</a></li>
+                        <li><a href="online-trading.html">Online Trading</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Shree Anna Connect. All rights reserved. | SMART INDIA HACKATHON 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
